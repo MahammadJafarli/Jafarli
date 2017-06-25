@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+         .side-collapse-container{
+             width:100%;
+             position:relative;
+             left:0;
+             transition:left .4s;
+         }
+         .side-collapse-container.out{
+             left:200px;
+         }
+         .side-collapse {
+             top:50px;
+             bottom:0;
+             left:0;
+             width:200px;
+             position:fixed;
+             overflow:hidden;
+             transition:width .4s;
+         }
+         .side-collapse.in {
+             width:0;
+         }
+     }
+// navbar sectionun bashlangici
+#navbar{
+  background-color: rgba(255, 255, 255, 0);
+
+  header{
+    padding-top: 8px;
+    .logo{
+      margin-top: 10px;
+    }
+    nav{
+      ul{
+        text-align: right !important;
+        li{
+          a{
+            color:white;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+              .nav-border{
+                margin-top: 5px;
+                height: 2px;
+                background: #78beff;
+                width: 0px;
+                transition: .7s;
+              }
+          }a:hover{
+            background-color: transparent;
+              .nav-border{
+                width: 100%;
+                transition: .7s;
+              }
+          }a:focus{
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+// navbar sectiononun sonu
+
+// header sectionun bashlangici
+#welcome{
+  background-image:url('../../images/hero.jpg') ;
+  height: 900px;
+  object-fit: cover;
+  // background: cover;
+}
+// header sectionun sonu

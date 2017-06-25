@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JAFARLİ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/particles/css/style.css">
+  </head>
+  <body>
+    <!-- navbar sectionin bashlangici -->
+    <section id="navbar">
+      <div class="container">
+        <header role="banner" class="container navbar navbar-fixed-top navbar-invers">
+          <div class="navbar-header">
+            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="logo ">
+              <img src="images/logo.png" alt="">
+            </div>
+          </div>
+          <div class=" side-collapse in">
+            <nav role="navigation" class="navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#Home">HOME<div class="nav-border"></div></a></li>
+                <li><a href="#users">ABOUT <div class="nav-border"></div></a></li>
+                <li><a href="#users">PORTFOLIO <div class="nav-border"></div></a></li>
+                <li><a href="#users">SERVICES <div class="nav-border"></div></a></li>
+                <li><a href="#users">CONTACT <div class="nav-border"></div></a></li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+      </div>
+    </section>
+    <!-- navbar sectionun sonu -->
+
+
+    <!-- header sectionun bashlangici -->
+      <section id="welcome" >
+        <div id="particles-js"></div>
+      </section>
+    <!-- header sectionun sonu -->
+    <script type="text/javascript" src="assets/js/particles/particles.js"></script>
+    <script type="text/javascript" src="assets/js/particles/app.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/particles/lib/stats.js"></script> -->
+    <script>
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+    <script type="text/javascript" src="assets/vendors/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
