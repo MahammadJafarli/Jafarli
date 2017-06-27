@@ -1,9 +1,22 @@
-$(document).ready(function() {
-            var sideslider = $('[data-toggle=collapse-side]');
-            var sel = sideslider.attr('data-target');
-            var sel2 = sideslider.attr('data-target-2');
-            sideslider.click(function(event){
-                $(sel).toggleClass('in');
-                $(sel2).toggleClass('out');
-            });
-        });
+$(document).ready(function(){
+	$(window).scroll(function(event) {
+		var animate= $(window).scrollTop();
+		console.log(animate);
+
+		if (animate>220) {
+			$(".navbar_change").css({
+        background:'black',
+        width:'100%',
+        height:'57px',
+        position:'fixed',
+        top:'0px',
+
+			});
+		}
+		if (animate==0) {
+			$(".navbar_change").css({
+				background:'transparent',
+			});
+		}
+	});
+});

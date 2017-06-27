@@ -34,7 +34,9 @@
 // navbar sectionun bashlangici
 #navbar{
   background-color: rgba(255, 255, 255, 0);
-
+  .navbar_change{
+    z-index: 1;
+  }
   header{
     padding-top: 8px;
     .navbar-header{
@@ -83,10 +85,15 @@
 // header sectionun bashlangici
 #welcome{
   background-image:url('../../images/hero.jpg') ;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  background-position: center center;
+  // background-position: center;
   width: 100%;
   object-fit: cover;
+  // text-align: center;
     .center{
       position: absolute;
       top:38%;
@@ -115,6 +122,11 @@
           text-transform: uppercase;
           border-radius: 0px;
           border: 0px solid #fff;
+          transition: .5s;
+        }button:hover{
+          background: white;
+          color:black;
+          transition: .5s;
         }
     }
 }
@@ -144,7 +156,7 @@
         padding: 10px;
       }
       .about_name{
-        font-size: 16px;
+        font-size: 20px;
         line-height: 18px;
         text-transform: uppercase;
         margin-top: 20px;
@@ -153,7 +165,7 @@
       }
       .about_position{
         color: #3eb991;
-        font-size: .9em;
+        font-size: 1.1em;
         font-weight: 400;
         color: #162221;
         line-height: 25px;
@@ -163,7 +175,7 @@
       }
     }
     .about_title{
-      font-size: 20px;
+      font-size: 25px;
       line-height: 24px;
       font-weight: 600;
       font-family: 'Open Sans';
@@ -171,7 +183,7 @@
     .about_text{
       margin-top: 20px;
       color: #777;
-      font-size: 1em;
+      font-size: 1.2em;
       font-weight: 400;
       color: #162221;
       line-height: 25px;
@@ -234,6 +246,7 @@
   min-height: 300px;
   width: 100%;
   background: #f4f4f4;
+  padding-top: 15px;
   h6{
     font-size: 26px;
     line-height: 24px;
@@ -246,7 +259,7 @@
       background: white;
       padding:10px 50px 0 50px;
       border-bottom: 5px solid #666;
-      margin-top: 10px;
+      margin-top: 20px;
       margin-bottom: 25px;
         .service_image{
           border-radius: 100%;
@@ -302,6 +315,110 @@
     }
 }
 // services sectionun sonu
+
+// hire_me sectionun bashlagici
+#hire_me{
+  min-height: 250px;
+  background-image: url('../../images/hireme-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  text-align: center;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  padding-top: 6rem;
+  margin-top: 0;
+  color: #fff;
+    h2{
+      padding-bottom: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2.0rem;
+      font-family: 'Open Sans';
+    }
+    h4{
+      margin-top: 50px;
+      margin-bottom: .5rem;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.1;
+      font-size: 21px;
+      color: inherit;
+      font-family: 'Open Sans';
+    }
+    button{
+      margin-top: 70px;
+      width: 100px;
+      height: 50px;
+      background: transparent;
+      border-radius: 0px;
+      border: 1px solid white;
+      transition: .5s;
+      font-family: 'Open Sans';
+    }button:hover{
+      background: white;
+      color:black;
+      transition: .5s;
+    }
+}
+// hire_me sectionun sonu
+
+// works scetionun bashlangici
+#works{
+  min-height: 300px;
+  width: 100%;
+  background-color: white;
+  padding-top: 35px;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  ul{
+      li{
+        list-style: none;
+        float: left;
+          a{
+            text-decoration: none;
+            padding: 0 1.5rem;
+            font-size: 1rem;
+            border-radius: 15px;
+            border: 0;
+            color: #999 !important;
+            cursor: pointer;
+            outline: 0;
+            display: inline-block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+      }
+  }
+  .items{
+    margin-top: 20px;
+    .item{
+      width: 390px;
+      height: 300px;
+      float: left;
+      transition: .5s;
+        a{
+          text-decoration: none;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+        }
+    }.item:hover{
+      opacity: 0.7;
+      transition: .5s;
+    }
+  }
+}
+// works sectionun sonu
 @media screen and (min-width: 300px)and (max-width: 700px){
   #welcome{
     .center{

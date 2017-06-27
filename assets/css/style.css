@@ -30,6 +30,8 @@
 
 #navbar {
   background-color: rgba(255, 255, 255, 0); }
+  #navbar .navbar_change {
+    z-index: 1; }
   #navbar header {
     padding-top: 8px; }
     #navbar header .navbar-header button span {
@@ -57,8 +59,11 @@
 
 #welcome {
   background-image: url("../../images/hero.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  background-position: center center;
   width: 100%;
   object-fit: cover; }
   #welcome .center {
@@ -86,7 +91,12 @@
       font-family: 'Open Sans';
       text-transform: uppercase;
       border-radius: 0px;
-      border: 0px solid #fff; }
+      border: 0px solid #fff;
+      transition: .5s; }
+    #welcome .center button:hover {
+      background: white;
+      color: black;
+      transition: .5s; }
 
 #about {
   min-height: 300px;
@@ -107,7 +117,7 @@
       border: 10px solid #eee;
       padding: 10px; }
     #about .about .about_name {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 18px;
       text-transform: uppercase;
       margin-top: 20px;
@@ -115,7 +125,7 @@
       font-weight: 600; }
     #about .about .about_position {
       color: #3eb991;
-      font-size: .9em;
+      font-size: 1.1em;
       font-weight: 400;
       color: #162221;
       line-height: 25px;
@@ -123,14 +133,14 @@
       word-spacing: 0.18em;
       font-family: 'Open Sans'; }
   #about .about_title {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 24px;
     font-weight: 600;
     font-family: 'Open Sans'; }
   #about .about_text {
     margin-top: 20px;
     color: #777;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     color: #162221;
     line-height: 25px;
@@ -179,7 +189,8 @@
 #services {
   min-height: 300px;
   width: 100%;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  padding-top: 15px; }
   #services h6 {
     font-size: 26px;
     line-height: 24px;
@@ -191,7 +202,7 @@
     background: white;
     padding: 10px 50px 0 50px;
     border-bottom: 5px solid #666;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 25px; }
     #services .service .service_image {
       border-radius: 100%;
@@ -234,6 +245,92 @@
         transition: .5s; }
     #services .service:hover .service_name, #services .service:hover .service_desc {
       color: white;
+      transition: .5s; }
+
+#hire_me {
+  min-height: 250px;
+  background-image: url("../../images/hireme-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  text-align: center;
+  padding-bottom: 5rem;
+  margin-bottom: 0;
+  padding-top: 6rem;
+  margin-top: 0;
+  color: #fff; }
+  #hire_me h2 {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    font-family: 'Open Sans'; }
+  #hire_me h4 {
+    margin-top: 50px;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 21px;
+    color: inherit;
+    font-family: 'Open Sans'; }
+  #hire_me button {
+    margin-top: 70px;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid white;
+    transition: .5s;
+    font-family: 'Open Sans'; }
+  #hire_me button:hover {
+    background: white;
+    color: black;
+    transition: .5s; }
+
+#works {
+  min-height: 300px;
+  width: 100%;
+  background-color: white;
+  padding-top: 35px; }
+  #works h6 {
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px; }
+  #works ul li {
+    list-style: none;
+    float: left; }
+    #works ul li a {
+      text-decoration: none;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      border-radius: 15px;
+      border: 0;
+      color: #999 !important;
+      cursor: pointer;
+      outline: 0;
+      display: inline-block;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+  #works .items {
+    margin-top: 20px; }
+    #works .items .item {
+      width: 390px;
+      height: 300px;
+      float: left;
+      transition: .5s; }
+      #works .items .item a {
+        text-decoration: none; }
+        #works .items .item a img {
+          width: 100%;
+          height: 100%; }
+    #works .items .item:hover {
+      opacity: 0.7;
       transition: .5s; }
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
