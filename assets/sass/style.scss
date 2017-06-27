@@ -19,10 +19,17 @@
              position:fixed;
              overflow:hidden;
              transition:width .4s;
+             background-color: black !important;
          }
          .side-collapse.in {
              width:0;
          }
+     }
+     .border_bottom{
+       width: 70px;
+       height: 2px;
+       background: black;
+       margin: 0 auto;
      }
 // navbar sectionun bashlangici
 #navbar{
@@ -30,6 +37,14 @@
 
   header{
     padding-top: 8px;
+    .navbar-header{
+      button{
+        span{
+          color:white;
+
+        }
+      }
+    }
     .logo{
       margin-top: 10px;
     }
@@ -68,7 +83,8 @@
 // header sectionun bashlangici
 #welcome{
   background-image:url('../../images/hero.jpg') ;
-  height: 900px;
+  height: 100%;
+  background-position: center center;
   width: 100%;
   object-fit: cover;
     .center{
@@ -104,10 +120,208 @@
 }
 // header sectionun sonu
 
+// about sectionun bashlangici
+#about{
+  min-height: 300px;
+  background-color: white;
+  padding: 50px 0px;
+  width: 100%;
+  h6{
+    font-family: 'Open Sans';
+    font-size: 26px;
+    line-height: 24px;
+    // text-align: center;
+    margin-bottom: 10px;
+    // display: inline-block;
+  }
+    .about{
+      margin-top: 40px;
+      .about_img{
+        border-radius: 100%;
+        width: 140px;
+        height: 140px;
+        border: 10px solid #eee;
+        padding: 10px;
+      }
+      .about_name{
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+      }
+      .about_position{
+        color: #3eb991;
+        font-size: .9em;
+        font-weight: 400;
+        color: #162221;
+        line-height: 25px;
+        letter-spacing: 1px;
+        word-spacing: 0.18em;
+        font-family: 'Open Sans';
+      }
+    }
+    .about_title{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      font-family: 'Open Sans';
+    }
+    .about_text{
+      margin-top: 20px;
+      color: #777;
+      font-size: 1em;
+      font-weight: 400;
+      color: #162221;
+      line-height: 25px;
+      letter-spacing: 1px;
+      word-spacing: 0.18em;
+      font-family: 'Open Sans';
+      padding-right: 20px;
+    }
+    button{
+      margin-top: 20px;
+      background: white;
+      color:black;
+      border-radius: 0px;
+      border: 1px solid #3EB991;
+      padding: 10px 20px;
+      font-size: 16px;
+      transition: all .5s ease;
+      font-family: 'Open Sans';
+    }button:hover{
+      background: black;
+      color:white;
+      transition: all .5s ease;
+    }
+}
+// about sectionun sonu
+
+//skills sectionun bashlangici
+#skills{
+  min-height: 300px;
+  background: white;
+  width: 100%;
+    h6{
+      font-size: 26px;
+      line-height: 24px;
+      font-family: 'Open Sans';
+      margin-bottom: 10px;
+    }
+    .skil{
+      width: 48%;
+      margin-bottom: 10px;
+      float: left;
+      margin-right: 15px;
+        p{
+          font-size: 15px;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-family: 'Open Sans';
+          margin-bottom: 5px;
+        }
+        .progress{
+          height: 10px;
+        }
+    }
+}
+//skilss sectionun sonu
+
+
+// services sectionin bashlnagici
+#services{
+  min-height: 300px;
+  width: 100%;
+  background: #f4f4f4;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+    .service{
+      transition: .5s;
+      background: white;
+      padding:10px 50px 0 50px;
+      border-bottom: 5px solid #666;
+      margin-top: 10px;
+      margin-bottom: 25px;
+        .service_image{
+          border-radius: 100%;
+          width: 50px;
+          height: 50px;
+          background-color: #333;
+          margin: 10px auto;
+          padding: 6px;
+          transition: .5s;
+            i{
+              font-size: 1.4rem;
+              color: #fff;
+              margin-top: 8px;
+              transition: .5s;
+            }
+        }
+        .service_name{
+          text-transform: uppercase;
+          margin-top: 21px;
+          margin-bottom: 8px;
+          transition: .5s;
+            h5{
+              font-weight: 800;
+              font-size: 1.1rem;
+              font-family: 'Open Sans';
+            }
+        }
+        .service_desc{
+          margin-bottom: 16px;
+          transition: .5s;
+            p{
+              font-size: 1rem;
+              letter-spacing: 0.5px;
+              font-family: 'Open Sans';
+            }
+        }
+    }.service:hover{
+      transition: .5s;
+      background: #333;
+      border-bottom: 5px solid #e1e1e1;
+        .service_image{
+          transition: .5s;
+          background: white;
+            i{
+              color: #333;
+              transition: .5s;
+            }
+        }
+        .service_name,.service_desc{
+          color:white;
+          transition: .5s;
+        }
+    }
+}
+// services sectionun sonu
 @media screen and (min-width: 300px)and (max-width: 700px){
   #welcome{
     .center{
       left: 0px !important;
     }
+  }
+  #about{
+    padding: 0px;
+    h6{
+      margin-top: 20px;
+    }
+    .about{
+      padding: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  #skills{
+    padding: 20px;
+      .skil{
+        width: 100%;
+      }
   }
 }

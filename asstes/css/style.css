@@ -22,12 +22,6 @@
 
   .side-collapse.in {
     width: 0; } }
-.border_bottom {
-  width: 70px;
-  height: 2px;
-  background: black;
-  margin: 0 auto; }
-
 #navbar {
   background-color: rgba(255, 255, 255, 0); }
   #navbar header {
@@ -91,15 +85,9 @@
 #about {
   min-height: 300px;
   background-color: white;
-  padding: 50px 0px;
-  width: 100%; }
-  #about h6 {
-    font-family: 'Open Sans';
-    font-size: 26px;
-    line-height: 24px;
-    margin-bottom: 10px; }
+  padding: 50px 0px; }
   #about .about {
-    margin-top: 40px; }
+    padding-right: 60px; }
     #about .about .about_img {
       border-radius: 100%;
       width: 140px;
@@ -149,108 +137,12 @@
     transition: all .5s ease;
     font-family: 'Open Sans'; }
   #about button:hover {
-    background: black;
+    background: #3EB991;
     color: white;
     transition: all .5s ease; }
 
-#skills {
-  min-height: 300px;
-  background: white;
-  width: 100%; }
-  #skills h6 {
-    font-size: 26px;
-    line-height: 24px;
-    font-family: 'Open Sans';
-    margin-bottom: 10px; }
-  #skills .skil {
-    width: 48%;
-    margin-bottom: 10px;
-    float: left;
-    margin-right: 15px; }
-    #skills .skil p {
-      font-size: 15px;
-      font-weight: 400;
-      text-transform: uppercase;
-      font-family: 'Open Sans';
-      margin-bottom: 5px; }
-    #skills .skil .progress {
-      height: 10px; }
-
-#services {
-  min-height: 300px;
-  width: 100%;
-  background: #f4f4f4; }
-  #services h6 {
-    font-size: 26px;
-    line-height: 24px;
-    font-family: 'Open Sans';
-    margin-bottom: 10px;
-    padding-top: 10px; }
-  #services .service {
-    transition: .5s;
-    background: white;
-    padding: 10px 50px 0 50px;
-    border-bottom: 5px solid #666;
-    margin-top: 10px;
-    margin-bottom: 25px; }
-    #services .service .service_image {
-      border-radius: 100%;
-      width: 50px;
-      height: 50px;
-      background-color: #333;
-      margin: 10px auto;
-      padding: 6px;
-      transition: .5s; }
-      #services .service .service_image i {
-        font-size: 1.4rem;
-        color: #fff;
-        margin-top: 8px;
-        transition: .5s; }
-    #services .service .service_name {
-      text-transform: uppercase;
-      margin-top: 21px;
-      margin-bottom: 8px;
-      transition: .5s; }
-      #services .service .service_name h5 {
-        font-weight: 800;
-        font-size: 1.1rem;
-        font-family: 'Open Sans'; }
-    #services .service .service_desc {
-      margin-bottom: 16px;
-      transition: .5s; }
-      #services .service .service_desc p {
-        font-size: 1rem;
-        letter-spacing: 0.5px;
-        font-family: 'Open Sans'; }
-  #services .service:hover {
-    transition: .5s;
-    background: #333;
-    border-bottom: 5px solid #e1e1e1; }
-    #services .service:hover .service_image {
-      transition: .5s;
-      background: white; }
-      #services .service:hover .service_image i {
-        color: #333;
-        transition: .5s; }
-    #services .service:hover .service_name, #services .service:hover .service_desc {
-      color: white;
-      transition: .5s; }
-
 @media screen and (min-width: 300px) and (max-width: 700px) {
   #welcome .center {
-    left: 0px !important; }
-
-  #about {
-    padding: 0px; }
-    #about h6 {
-      margin-top: 20px; }
-    #about .about {
-      padding: 0px;
-      margin-bottom: 20px; }
-
-  #skills {
-    padding: 20px; }
-    #skills .skil {
-      width: 100%; } }
+    left: 0px !important; } }
 
 /*# sourceMappingURL=style.css.map */
