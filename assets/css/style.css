@@ -1,3 +1,5 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif; }
 @media screen and (max-width: 768px) {
   .side-collapse-container {
     width: 100%;
@@ -25,29 +27,59 @@
     padding-top: 8px; }
     #navbar header .logo {
       margin-top: 10px; }
-    #navbar header nav ul {
-      text-align: right !important; }
-      #navbar header nav ul li a {
-        color: white;
-        font-weight: 500;
-        letter-spacing: 0.6px; }
-        #navbar header nav ul li a .nav-border {
-          margin-top: 5px;
-          height: 2px;
-          background: #78beff;
-          width: 0px;
-          transition: .7s; }
-      #navbar header nav ul li a:hover {
-        background-color: transparent; }
-        #navbar header nav ul li a:hover .nav-border {
-          width: 100%;
-          transition: .7s; }
-      #navbar header nav ul li a:focus {
-        background-color: transparent; }
+    #navbar header nav ul li a {
+      color: white;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      font-family: 'Open Sans'; }
+      #navbar header nav ul li a .nav-border {
+        margin-top: 5px;
+        height: 2px;
+        background: #78beff;
+        width: 0px;
+        transition: .7s; }
+    #navbar header nav ul li a:hover {
+      background-color: transparent; }
+      #navbar header nav ul li a:hover .nav-border {
+        width: 100%;
+        transition: .7s; }
+    #navbar header nav ul li a:focus {
+      background-color: transparent; }
 
 #welcome {
   background-image: url("../../images/hero.jpg");
   height: 900px;
+  width: 100%;
   object-fit: cover; }
+  #welcome .center {
+    position: absolute;
+    top: 38%;
+    left: 27%; }
+    #welcome .center h3 {
+      font-family: 'Open Sans';
+      color: white;
+      font-size: 3.0rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    #welcome .center p {
+      font-size: 1.5rem;
+      font-family: 'Open Sans';
+      color: white; }
+    #welcome .center button {
+      margin-top: 20px;
+      background: transparent;
+      color: #333;
+      -webkit-box-shadow: 0 0 0 2px #fff;
+      box-shadow: 0 0 0 2px #fff;
+      color: white;
+      font-family: 'Open Sans';
+      text-transform: uppercase;
+      border-radius: 0px;
+      border: 0px solid #fff; }
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #welcome .center {
+    left: 0px !important; } }
 
 /*# sourceMappingURL=style.css.map */

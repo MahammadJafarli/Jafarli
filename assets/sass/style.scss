@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
 @media screen and (max-width: 768px) {
          .side-collapse-container{
              width:100%;
@@ -32,12 +35,13 @@
     }
     nav{
       ul{
-        text-align: right !important;
+        // text-align: right !important;
         li{
           a{
             color:white;
             font-weight: 500;
             letter-spacing: 0.6px;
+            font-family: 'Open Sans';
               .nav-border{
                 margin-top: 5px;
                 height: 2px;
@@ -65,7 +69,45 @@
 #welcome{
   background-image:url('../../images/hero.jpg') ;
   height: 900px;
+  width: 100%;
   object-fit: cover;
-  // background: cover;
+    .center{
+      position: absolute;
+      top:38%;
+      left: 27%;
+        h3{
+          font-family: 'Open Sans';
+          color:white;
+          font-size: 3.0rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+        p{
+          font-size: 1.5rem;
+          font-family: 'Open Sans';
+          color:white;
+        }
+        button{
+          margin-top: 20px;
+          background: transparent;
+          color: #333;
+          -webkit-box-shadow: 0 0 0 2px #fff;
+          box-shadow: 0 0 0 2px #fff;
+          color:white;
+          font-family: 'Open Sans';
+          text-transform: uppercase;
+          border-radius: 0px;
+          border: 0px solid #fff;
+        }
+    }
 }
 // header sectionun sonu
+
+@media screen and (min-width: 300px)and (max-width: 700px){
+  #welcome{
+    .center{
+      left: 0px !important;
+    }
+  }
+}
