@@ -36,7 +36,9 @@
   background-color: rgba(255, 255, 255, 0);
   .navbar_change{
     z-index: 1;
+
   }
+
   header{
     padding-top: 8px;
     .navbar-header{
@@ -97,7 +99,7 @@
     .center{
       position: absolute;
       top:38%;
-      left: 27%;
+      width: 100%;
         h3{
           font-family: 'Open Sans';
           color:white;
@@ -331,14 +333,16 @@
   padding-top: 6rem;
   margin-top: 0;
   color: #fff;
-    h2{
+    .hear_title{
       padding-bottom: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 2.0rem;
       font-family: 'Open Sans';
+      transform: translateX(-1000px);
+      transition: 1s;
     }
-    h4{
+    .hear_text{
       margin-top: 50px;
       margin-bottom: .5rem;
       font-family: inherit;
@@ -347,20 +351,23 @@
       font-size: 21px;
       color: inherit;
       font-family: 'Open Sans';
+      transform: translateX(1190px);
+      transition: 1s;
     }
-    button{
+    .hear_btn{
       margin-top: 70px;
       width: 100px;
       height: 50px;
       background: transparent;
       border-radius: 0px;
       border: 1px solid white;
-      transition: .5s;
+      transition: 1s;
       font-family: 'Open Sans';
+      transform: translateY(110px);
     }button:hover{
       background: white;
       color:black;
-      transition: .5s;
+      transition: 1s;
     }
 }
 // hire_me sectionun sonu
@@ -390,7 +397,7 @@
             border: 0;
             color: #999 !important;
             cursor: pointer;
-            outline: 0;
+
             display: inline-block;
             margin-bottom: 1rem;
             text-transform: uppercase;
@@ -440,5 +447,13 @@
       .skil{
         width: 100%;
       }
+  }
+  #works{
+    .items{
+      .item{
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
   }
 }

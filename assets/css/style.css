@@ -69,7 +69,7 @@
   #welcome .center {
     position: absolute;
     top: 38%;
-    left: 27%; }
+    width: 100%; }
     #welcome .center h3 {
       font-family: 'Open Sans';
       color: white;
@@ -261,13 +261,15 @@
   padding-top: 6rem;
   margin-top: 0;
   color: #fff; }
-  #hire_me h2 {
+  #hire_me .hear_title {
     padding-bottom: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2.0rem;
-    font-family: 'Open Sans'; }
-  #hire_me h4 {
+    font-family: 'Open Sans';
+    transform: translateX(-1000px);
+    transition: 1s; }
+  #hire_me .hear_text {
     margin-top: 50px;
     margin-bottom: .5rem;
     font-family: inherit;
@@ -275,20 +277,23 @@
     line-height: 1.1;
     font-size: 21px;
     color: inherit;
-    font-family: 'Open Sans'; }
-  #hire_me button {
+    font-family: 'Open Sans';
+    transform: translateX(1190px);
+    transition: 1s; }
+  #hire_me .hear_btn {
     margin-top: 70px;
     width: 100px;
     height: 50px;
     background: transparent;
     border-radius: 0px;
     border: 1px solid white;
-    transition: .5s;
-    font-family: 'Open Sans'; }
+    transition: 1s;
+    font-family: 'Open Sans';
+    transform: translateY(110px); }
   #hire_me button:hover {
     background: white;
     color: black;
-    transition: .5s; }
+    transition: 1s; }
 
 #works {
   min-height: 300px;
@@ -312,7 +317,6 @@
       border: 0;
       color: #999 !important;
       cursor: pointer;
-      outline: 0;
       display: inline-block;
       margin-bottom: 1rem;
       text-transform: uppercase;
@@ -348,6 +352,10 @@
   #skills {
     padding: 20px; }
     #skills .skil {
-      width: 100%; } }
+      width: 100%; }
+
+  #works .items .item {
+    width: 100%;
+    padding: 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */
