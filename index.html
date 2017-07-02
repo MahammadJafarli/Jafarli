@@ -31,11 +31,12 @@
             <div id="nese" class="side-collapse in">
               <nav role="navigation" class="navbar-collapse">
                 <ul class="nav navbar-nav pull-right visible-md visible-lg ">
-                  <li><a href="#Home">HOME<div class="nav-border"></div></a></li>
-                  <li><a href="#users">ABOUT <div class="nav-border"></div></a></li>
-                  <li><a href="#users">PORTFOLIO <div class="nav-border"></div></a></li>
-                  <li><a href="#users">SERVICES <div class="nav-border"></div></a></li>
-                  <li><a href="#users">CONTACT <div class="nav-border"></div></a></li>
+                  <li><a  data-scroll-nav="0">HOME<div class="nav-border"></div></a></li>
+                  <li><a  data-scroll-nav="1">ABOUT <div class="nav-border"></div></a></li>
+                  <li><a  data-scroll-nav="2">SERVICES <div class="nav-border"></div></a></li>
+                  <li><a  data-scroll-nav="3">PORTFOLIO <div class="nav-border"></div></a></li>
+                  <li><a  data-scroll-nav="4">News <div class="nav-border"></div></a></li>
+                  <li><a data-scroll-nav="5">CONTACT <div class="nav-border"></div></a></li>
                 </ul>
                 <ul class="nav navbar-nav visible-xs">
                   <li><a href="#Home">HOME<div class="nav-border"></div></a></li>
@@ -53,14 +54,14 @@
     <!-- navbar sectionun sonu -->
 
     <!-- header sectionun bashlangici -->
-      <section id="welcome" >
+      <section id="welcome" data-scroll-index="0">
         <div id="particles-js"></div>
         <div class="row text-center">
           <div class="center">
             <!-- <center> -->
               <h3 class="text-center">hello, i am Mahammad</h3>
               <p class="text-center">i'm web developer</p>
-              <button type="button" class="btn" name="button">see my portfolio</button>
+              <button type="button" data-scroll-nav="3" class="btn" name="button">see my portfolio</button>
             <!-- </center> -->
           </div>
         </div>
@@ -68,7 +69,7 @@
     <!-- header sectionun sonu -->
 
     <!-- about sectionun bashlangici -->
-    <section id="about">
+    <section id="about" data-scroll-index="1">
       <div class="container">
         <div class="row text-center">
           <h6>About</h6>
@@ -108,7 +109,6 @@
             <p>HTML 90%</p>
             <div class="progress">
               <div class="progress-bar html" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -116,7 +116,6 @@
             <p>CSS 90% (BootStrap, Materialize, Sass, Less)</p>
             <div class="progress">
               <div class="progress-bar css" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -124,7 +123,6 @@
             <p>JavaScript 70% (JQuery)</p>
             <div class="progress">
               <div class="progress-bar js" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -132,7 +130,6 @@
             <p>PHP & MYSQL - 75% (MVC, Larevel, Yii2)</p>
             <div class="progress">
               <div class="progress-bar php" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -140,7 +137,6 @@
             <p>AJAX 50% </p>
             <div class="progress">
               <div class="progress-bar ajax" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -148,7 +144,6 @@
             <p>C#, Pascal 40% </p>
             <div class="progress">
               <div class="progress-bar pascal" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%; background:black;">
-
               </div>
             </div>
           </div>
@@ -166,7 +161,7 @@
     <!-- skills sectionun sonu -->
 
     <!-- services sectionun bashlangici -->
-    <section id="services">
+    <section id="services" data-scroll-index="2">
       <div class="container">
       <div class="row text-center">
         <h6>Services</h6>
@@ -256,88 +251,221 @@
     </section>
     <!-- services sectionun sonu -->
 
+    <!-- works sectionun bashlnagici -->
+    <section id="works" data-scroll-index="3">
+      <div class="container" id="accordion">
+          <div class="row text-center">
+            <h6>Works</h6>
+              <div class="border_bottom"></div>
+          </div>
+            <div class="row text-center">
+              <!-- <center> -->
+                <ul  role="tablist">
+                  <li role="presentation" class="active"><a href="#collapse1" aria-controls="collapse1" role="tab" data-toggle="tab">All</a></li>
+                  <li role="presentation"><a href="#collapse2" aria-controls="collapse2" role="tab" data-toggle="tab">Front End</a></li>
+                  <li role="presentation"><a href="#collapse3" aria-controls="collapse3" role="tab" data-toggle="tab">Back End</a></li>
+                  <li role="presentation"><a href="#collapse4" aria-controls="collapse4" role="tab" data-toggle="tab">Mobile App</a></li>
+                </ul>
+              <!-- </center> -->
+            </div>
+              <div class="row tab-content" >
+                <div role="tabpanel" class="tab-pane active items" id="collapse1">
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio1.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio2.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio3.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio3.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio2.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio1.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane items" id="collapse2">
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio1.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio3.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane items" id="collapse3">
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio1.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane items" id="collapse4">
+                  <div class="item">
+                    <a href="#">
+                      <img src="images/portfolio1.jpg" class="img-responsive" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+  <!-- works sectionunsonu -->
+
     <!-- hire_me sectionun bashlnagici -->
     <section id="hire_me">
       <div class="container">
         <div class="row" style="overflow:hidden">
           <h2 class="hear_title">DO YOU HAVE AN INTERESTING PROJECT?</h2>
           <h4 class="hear_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit lorem in ipsum efficitur laoreet. Suspendisse malesuada mi ligula, sit amet tristique ex lacinia vel.</h4>
-          <button type="button" class="btn hear_btn" name="button">HIRE ME !</button>
+          <button type="button" data-scroll-nav="4" class="btn hear_btn" name="button">HIRE ME !</button>
         </div>
       </div>
     </section>
     <!-- hire_me sectionun sonu -->
 
-    <!-- works sectionun bashlnagici -->
-    <section id="works">
-  <div class="container" id="accordion">
-    <div class="row text-center">
-      <h6>Works</h6>
-        <div class="border_bottom"></div>
-    </div>
-    <div class="row text-center">
-      <center>
-        <ul class="nav nav-tabs tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#collapse1" aria-controls="collapse1" role="tab" data-toggle="tab">All</a></li>
-          <li role="presentation"><a href="#collapse2" aria-controls="collapse2" role="tab" data-toggle="tab">Front End</a></li>
-          <li role="presentation"><a href="#collapse3" aria-controls="collapse3" role="tab" data-toggle="tab">Back End</a></li>
-          <li role="presentation"><a href="#collapse4" aria-controls="collapse4" role="tab" data-toggle="tab">Mobile App</a></li>
-        </ul>
-      </center>
-    </div>
-    <div class="row tab-content" >
-      <div role="tabpanel" class="tab-pane active items" id="collapse1">
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio1.jpg" class="img-responsive" alt="">
-          </a>
+    <!-- news sectioniun bashlangici -->
+    <section id="news" data-scroll-index="4">
+      <div class="container">
+        <div class="row text-center">
+          <h6>LATEST NEWS</h6>
+            <div class="border_bottom"></div>
         </div>
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio2.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio3.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-      </div>
-
-      <div role="tabpanel" class="tab-pane items" id="collapse2">
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio1.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio3.jpg" class="img-responsive" alt="">
-          </a>
-        </div>
-      </div>
-
-      <div role="tabpanel" class="tab-pane items" id="collapse3">
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio1.jpg" class="img-responsive" alt="">
-          </a>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="new">
+              <a href="#">
+                <div class="new_img">
+                  <img src="images/news1.png" class="img-responsive" alt="">
+                </div>
+                <h5 class="new_title">Title Single Topic</h5>
+                <p class="new_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                <a href="#">
+                  <button type="button" class="btn pull-right" name="button">READ MORE</button>
+                </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="new">
+              <a href="#">
+                <div class="new_img">
+                  <img src="images/news2.jpg" class="img-responsive" alt="">
+                </div>
+                <h5 class="new_title">Title Single Topic</h5>
+                <p class="new_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                <a href="#">
+                  <button type="button" class="btn pull-right" name="button">READ MORE</button>
+                </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="new">
+              <a href="#">
+                <div class="new_img">
+                  <img src="images/news3.jpg" class="img-responsive" alt="">
+                </div>
+                <h5 class="new_title">Title Single Topic</h5>
+                <p class="new_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                <a href="#">
+                  <button type="button" class="btn pull-right" name="button">READ MORE</button>
+                </a>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane items" id="collapse4">
-        <div class="item">
-          <a href="#">
-            <img src="images/portfolio1.jpg" class="img-responsive" alt="">
-          </a>
+    </section>
+    <!-- news sectionun sonu -->
+
+    <!-- contact sectionun bashlangici -->
+      <section id="contact" data-scroll-index="5">
+        <div class="container">
+          <div class="row text-center">
+              <h6>Contact me</h6>
+              <p>Please fill the form below. I will contact you as soon as possible.</p>
+              <div class="border_bottom"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <input type="text"  name="name" value="" placeholder="Your Name">
+              <input type="text"  name="email" value="" placeholder="Email">
+              <input type="text"  name="subject" value="" placeholder="Subject">
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <textarea name="message" placeholder="Your Message" rows="7" cols="80"></textarea>
+            </div>
+          </div>
+          <div class="row text-center">
+            <button type="button" class="btn" name="button">Send Message</button>
+          </div>
+        </div>
+      </section>
+    <!-- contac sectionun sonu -->
+
+    <!-- location sectionun bashlangici -->
+    <section id="location">
+      <div class="container">
+        <div class="row">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.417820758766!2d49.8519139154811!3d40.37743147936967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d077c61fef3%3A0xfa4594c97092ca01!2sAF+Business+House!5e0!3m2!1sen!2sin!4v1498950632803" width="100%" height="250" background-color: rgb(229, 227, 223) frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-md-7 col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <ul>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i> Nizami st. 203-B,AF Business House, 3rd Fl.Baku, Azerbaijan</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> +994 51 550 19 45</li>
+              <li><i class="fa fa-envelope-o" aria-hidden="true"></i> mahammad.c@code.edu.az</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- location sectionun sonu -->
 
-    </div>
-  </div>
-</section>
-
-    <!-- works sectionunsonu -->
+    <!-- footer sectionun bashlangici -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Copyright © 2017 JAFARLİ</p>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><a href="https://github.com/MahammadJafarli"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/MahammadJafarlii"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/mahammadjafarli/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/mahammad_jafarli/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer sectionun sonu -->
     <script type="text/javascript" src="assets/js/particles/particles.js"></script>
     <script type="text/javascript" src="assets/js/particles/app.js"></script>
     <!-- <script type="text/javascript" src="assets/js/particles/lib/stats.js"></script> -->
@@ -367,8 +495,10 @@
             });
         });
     </script>
-    <script type="text/javascript" src="assets/vendors/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/scrollIt.js"></script>
+
   </body>
 </html>

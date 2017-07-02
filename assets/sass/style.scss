@@ -61,6 +61,7 @@
             font-weight: 500;
             letter-spacing: 0.6px;
             font-family: 'Open Sans';
+            cursor: pointer;
               .nav-border{
                 margin-top: 5px;
                 height: 2px;
@@ -378,6 +379,7 @@
   width: 100%;
   background-color: white;
   padding-top: 35px;
+  padding-bottom: 35px;
   h6{
     font-size: 26px;
     line-height: 24px;
@@ -386,9 +388,11 @@
     padding-top: 10px;
   }
   ul{
+    border: none;
+    margin-top: 30px;
       li{
         list-style: none;
-        float: left;
+        display: inline-block;
           a{
             text-decoration: none;
             padding: 0 1.5rem;
@@ -397,11 +401,11 @@
             border: 0;
             color: #999 !important;
             cursor: pointer;
-
             display: inline-block;
             margin-bottom: 1rem;
             text-transform: uppercase;
             font-weight: bold;
+            font-family: 'Open Sans';
           }
       }
   }
@@ -426,6 +430,228 @@
   }
 }
 // works sectionun sonu
+
+// news sectionun bashlangici
+#news{
+  min-height: 300px;
+  width: 100%;
+  background: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .new{
+    margin-top: 20px;
+
+    a{
+      text-decoration: none;
+        .new_img{
+          // width: 360px;
+          // height: 257px;
+          overflow: hidden;
+            img{
+              // width: 100%;
+              // height: 100%;
+              transition: all 0.7s ease;
+            }
+        }
+        .new_title{
+          font-size: 22px;
+          line-height: 24px;
+          font-weight: 600;
+          color: #333;
+          font-family: 'Open Sans';
+          margin-top: 15px;
+          margin-bottom: 10px;
+          transition: all 0.7s ease;
+        }
+        .new_text{
+          color: #777;
+          font-size: .9em;
+          font-weight: 400;
+          // color: #162221;
+          line-height: 25px;
+          letter-spacing: 1px;
+          word-spacing: 0.18em;
+          font-family: 'Open Sans';
+        }
+        button{
+          margin-top: 10px;
+          border-radius: 0px;
+          background-color: black;
+          color: white;
+          font-family: 'Open Sans';
+          padding: 10px 20px;
+          font-size: 16px;
+          transition: .5s;
+        }button:hover{
+          background: white;
+          color: black;
+          transition: .5s;
+          border:1px solid black;
+        }
+    }
+  }.new:hover{
+    .new_img{
+      img{
+        transition: all 0.7s ease;
+        transform: scale(1.1);
+      }
+    }
+    .new_title{
+        color: #3eb991;
+        transition: all 0.7s ease;
+    }
+  }
+}
+// news sectionun sonu
+
+// contact sevtionun bashlangici
+#contact{
+  min-height: 300px;
+  width: 100%;
+  background: #333;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  h6{
+    font-size: 45px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 15px;
+    padding-top: 10px;
+    color: white;
+    line-height: 1.1;
+  }
+  p{
+    color: #f0f0f0;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    font-family: 'Open Sans';
+  }
+  .border_bottom{
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    color: #fff;
+    font-family: 'Open Sans';
+    padding:10px;
+    height: 35px !important;
+    margin: 20px 0;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    color: #fff;
+    height: 205px;
+    font-family: 'Open Sans';
+  }
+  button{
+    border-radius: 0px;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Open Sans';
+    color:white;
+    margin-top: 10px;
+    transition: .2s;
+    padding: 10px 20px;
+    font-size: 16px;
+  }button:hover{
+    background: white;
+    color: #333;
+    transition: .2s;
+  }
+}
+// contact sectionun sonu
+
+// location sectionun bashlangici
+#location{
+      background: #f4f4f4;
+      min-height:200px;
+      width: 100%;
+      padding: 35px 0;
+      p{
+        color: #666;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+        font-family: 'Open Sans';
+        margin-top: 15px;
+      }
+      ul{
+        padding: 0px;
+        margin-top: 15px;
+          li{
+            list-style: none;
+            font-size: 1.1rem;
+            font-family: 'Open Sans';
+            margin-bottom: 10px;
+            color: #555;
+            letter-spacing: 0.5px;
+              i{
+                padding-right: 10px;
+                color: #000;
+                font-size: 1.2rem;
+              }
+          }
+      }
+}
+// locatin sectionun sonu
+
+// footer sectionun bashlangici
+footer{
+  width: 100%;
+  color: #fff;
+  background: #111;
+  height: 60px;
+  // padding: 20px 0;
+    p{
+      font-size: 15px;;
+      font-family: 'Open Sans';
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+    ul{
+      padding: 0px;
+      margin-top: 20px;
+      text-align: right;
+        li{
+          list-style: none;
+          display: inline-block;
+          margin-left: 10px;
+            a{
+              color:white;
+              font-size: 15px;
+
+            }
+        }
+    }
+}
+// footer sectionun sonu
 @media screen and (min-width: 300px)and (max-width: 700px){
   #welcome{
     .center{

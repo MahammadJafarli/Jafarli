@@ -60,3 +60,8 @@ $(document).ready(function(){
 		}
 	});
 });
+
+
+$(function(){
+  $.scrollIt();
+});
