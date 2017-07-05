@@ -44,7 +44,7 @@ $(document).ready(function(){
 				transition:'1s',
 			});
 		}
-		if(animate>1450){
+		if(animate>2458){
 			$(".hear_title").css({
 				transform: 'translateX(0px)',
 	      transition:'1s',

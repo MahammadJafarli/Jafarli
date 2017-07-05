@@ -36,6 +36,8 @@
     padding-top: 8px; }
     #navbar header .navbar-header button span {
       color: white; }
+    #navbar header .navbar-header button:focus {
+      outline: none; }
     #navbar header .logo {
       margin-top: 10px; }
     #navbar header nav ul li a {
@@ -59,7 +61,7 @@
       background-color: transparent; }
 
 #welcome {
-  background-image: url("../../images/hero.jpg");
+  background-image: url("../../images/pc5.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,6 +100,8 @@
       background: white;
       color: black;
       transition: .5s; }
+    #welcome .center button:focus {
+      outline: none; }
 
 #about {
   min-height: 300px;
@@ -163,6 +167,8 @@
     background: black;
     color: white;
     transition: all .5s ease; }
+  #about button:focus {
+    outline: none; }
 
 #skills {
   min-height: 300px;
@@ -295,6 +301,8 @@
     background: white;
     color: black;
     transition: 1s; }
+  #hire_me button:focus {
+    outline: none; }
 
 #works {
   min-height: 300px;
@@ -394,6 +402,8 @@
         color: black;
         transition: .5s;
         border: 1px solid black; }
+      #news .new a button:focus {
+        outline: none; }
   #news .new:hover .new_img img {
     transition: all 0.7s ease;
     transform: scale(1.1); }
@@ -469,6 +479,8 @@
     background: white;
     color: #333;
     transition: .2s; }
+  #contact button:focus {
+    outline: none; }
 
 #location {
   background: #f4f4f4;
@@ -518,7 +530,7 @@ footer {
         color: white;
         font-size: 15px; }
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   #welcome .center {
     left: 0px !important; }
 
