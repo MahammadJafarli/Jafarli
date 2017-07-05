@@ -24,12 +24,36 @@
              width:0;
          }
      }
+
      .border_bottom{
        width: 70px;
        height: 2px;
        background: black;
        margin: 0 auto;
      }
+
+     .move_top{
+       z-index: 50;
+       width: 40px;
+       height: 40px;
+       border-radius: 100%;
+       background: black;
+       opacity: 0.5;
+      //  position: relative;
+       bottom: 35px;
+       right: 35px;
+       position: fixed;
+        a{
+          text-decoration: none;
+            i{
+              color: white;
+              font-size: 20px;
+              margin-top: 10px;
+            }
+        }
+     }
+
+
 // navbar sectionun bashlangici
 #navbar{
   background-color: rgba(255, 255, 255, 0);
@@ -669,6 +693,10 @@ footer{
 }
 // footer sectionun sonu
 @media screen and (max-width: 768px){
+  .move_top{
+    right: 15px;
+    bottom: 15px;
+  }
   #navbar{
     header{
       #nese{
@@ -705,6 +733,17 @@ footer{
         width: 100%;
         padding: 0 10px;
       }
+    }
+  }
+  footer{
+    p{
+      text-align: center;
+    }
+    ul{
+      text-align: center;
+        li{
+          margin-right: 20px;
+        }
     }
   }
 }
