@@ -17,8 +17,7 @@
     width: 200px;
     position: fixed;
     overflow: hidden;
-    transition: width .4s;
-    background-color: black !important; }
+    transition: width .4s; }
 
   .side-collapse.in {
     width: 0; } }
@@ -34,31 +33,36 @@
     z-index: 1; }
   #navbar header {
     padding-top: 8px; }
-    #navbar header .navbar-header button span {
-      color: white; }
+    #navbar header .navbar-header button {
+      padding-top: 2px; }
+      #navbar header .navbar-header button .bar {
+        color: white;
+        font-size: 23px; }
     #navbar header .navbar-header button:focus {
       outline: none; }
     #navbar header .logo {
       margin-top: 10px; }
-    #navbar header nav ul li a {
-      color: white;
-      font-weight: 500;
-      letter-spacing: 0.6px;
-      font-family: 'Open Sans';
-      cursor: pointer; }
-      #navbar header nav ul li a .nav-border {
-        margin-top: 5px;
-        height: 2px;
-        background: #78beff;
-        width: 0px;
-        transition: .7s; }
-    #navbar header nav ul li a:hover {
-      background-color: transparent; }
-      #navbar header nav ul li a:hover .nav-border {
-        width: 100%;
-        transition: .7s; }
-    #navbar header nav ul li a:focus {
-      background-color: transparent; }
+    #navbar header #nese {
+      opacity: 1; }
+      #navbar header #nese nav ul li a {
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        font-family: 'Open Sans';
+        cursor: pointer; }
+        #navbar header #nese nav ul li a .nav-border {
+          margin-top: 5px;
+          height: 2px;
+          background: #78beff;
+          width: 0px;
+          transition: .7s; }
+      #navbar header #nese nav ul li a:hover {
+        background-color: transparent; }
+        #navbar header #nese nav ul li a:hover .nav-border {
+          width: 100%;
+          transition: .7s; }
+      #navbar header #nese nav ul li a:focus {
+        background-color: transparent; }
 
 #welcome {
   background-image: url("../../images/pc5.jpg");
@@ -531,6 +535,10 @@ footer {
         font-size: 15px; }
 
 @media screen and (max-width: 768px) {
+  #navbar header #nese {
+    opacity: 0.8;
+    background: black; }
+
   #welcome .center {
     left: 0px !important; }
 

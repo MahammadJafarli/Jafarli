@@ -19,7 +19,6 @@
              position:fixed;
              overflow:hidden;
              transition:width .4s;
-             background-color: black !important;
          }
          .side-collapse.in {
              width:0;
@@ -43,9 +42,10 @@
     padding-top: 8px;
     .navbar-header{
       button{
-        span{
+        padding-top: 2px;
+        .bar{
           color:white;
-
+          font-size: 23px;
         }
       }button:focus{
           outline: none;
@@ -54,6 +54,8 @@
     .logo{
       margin-top: 10px;
     }
+  #nese{
+    opacity: 1;
     nav{
       ul{
         // text-align: right !important;
@@ -83,6 +85,8 @@
         }
       }
     }
+  }
+
   }
 }
 // navbar sectiononun sonu
@@ -665,6 +669,15 @@ footer{
 }
 // footer sectionun sonu
 @media screen and (max-width: 768px){
+  #navbar{
+    header{
+      #nese{
+        opacity: 0.8;
+        background: black;
+      }
+    }
+  }
+
   #welcome{
     .center{
       left: 0px !important;
