@@ -38,7 +38,8 @@
   right: 35px;
   position: fixed; }
   .move_top a {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     .move_top a i {
       color: white;
       font-size: 20px;
