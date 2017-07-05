@@ -550,5 +550,9 @@ footer {
   #works .items .item {
     width: 100%;
     padding: 0 10px; } }
+@media screen and (max-width: 992px) {
+  #works .items .item {
+    width: 100%;
+    padding: 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */
