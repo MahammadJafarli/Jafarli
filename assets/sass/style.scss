@@ -32,29 +32,27 @@
        margin: 0 auto;
      }
 
-     .move_top{
-       z-index: 50;
-       width: 40px;
-       height: 40px;
-       border-radius: 100%;
-       background: black;
-       opacity: 0.5;
-      //  position: relative;
-       bottom: 35px;
-       right: 35px;
-       position: fixed;
-        a{
-          text-decoration: none;
-          cursor: pointer;
-            i{
-              color: white;
-              font-size: 20px;
-              margin-top: 10px;
-            }
-        }
-     }
+     a{
+       text-decoration: none;
+       cursor: pointer;
+         .move_top{
+           z-index: 50;
+           width: 40px;
+           height: 40px;
+           border-radius: 100%;
+           background: black;
+           opacity: 0.5;
+           bottom: 35px;
+           right: 35px;
+           position: fixed;
+                i{
+                  color: white;
+                  font-size: 20px;
+                  margin-top: 10px;
+                }
+         }
 
-
+       }
 // navbar sectionun bashlangici
 #navbar{
   background-color: rgba(255, 255, 255, 0);
@@ -668,7 +666,7 @@ footer{
   width: 100%;
   color: #fff;
   background: #111;
-  height: 60px;
+  min-height: 60px;
   // padding: 20px 0;
     p{
       font-size: 15px;;
@@ -693,6 +691,125 @@ footer{
     }
 }
 // footer sectionun sonu
+
+//single_post sectionun bashlangici
+#single_post{
+  h4{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 600;
+    // color: #333;
+    font-family: 'Open Sans';
+    margin-top: 80px;
+    margin-bottom: 35px;
+    // transition: all 0.7s ease;
+  }
+  p{
+      margin-top: 20px;
+       font-size: .9em;
+       font-weight: 400;
+       color: #162221;
+       line-height: 25px;
+       letter-spacing: 1px;
+       word-spacing: 0.18em;
+       font-family: 'Open Sans';
+  }
+
+  h6{
+    font-size: 26px;
+    line-height: 24px;
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  // news_single sectionun bashlangici
+  #news_single{
+    min-height: 300px;
+    width: 100%;
+    background: white;
+    padding-top: 65px;
+    padding-bottom: 35px;
+    h6{
+      font-size: 26px;
+      line-height: 24px;
+      font-family: 'Open Sans';
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    .new_single{
+      margin-top: 20px;
+
+      a{
+        text-decoration: none;
+          .new_img_single{
+            // width: 360px;
+            // height: 257px;
+            overflow: hidden;
+              img{
+                // width: 100%;
+                // height: 100%;
+                transition: all 0.7s ease;
+              }
+          }
+          .new_title_single{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Open Sans';
+            margin-top: 15px;
+            margin-bottom: 10px;
+            transition: all 0.7s ease;
+          }
+          // .new_text{
+          //   color: #777;
+          //   font-size: .9em;
+          //   font-weight: 400;
+          //   // color: #162221;
+          //   line-height: 25px;
+          //   letter-spacing: 1px;
+          //   word-spacing: 0.18em;
+          //   font-family: 'Open Sans';
+          // }
+          // button{
+          //   margin-top: 10px;
+          //   border-radius: 0px;
+          //   background-color: black;
+          //   color: white;
+          //   font-family: 'Open Sans';
+          //   padding: 10px 20px;
+          //   font-size: 16px;
+          //   transition: .5s;
+          // }button:hover{
+          //   background: white;
+          //   color: black;
+          //   transition: .5s;
+          //   border:1px solid black;
+          // }button:focus{
+          //     outline: none;
+          //   }
+      }
+    }.new_single:hover{
+      // .new_img{
+      //   img{
+      //     transition: all 0.7s ease;
+      //     transform: scale(1.1);
+      //   }
+      // }
+      .new_title_single{
+          color: #3eb991;
+          transition: all 0.7s ease;
+      }
+    }
+  }
+  // news_single sectionun sonu
+}
+//single_post sectionun sonu
+
+
+
 @media screen and (max-width: 768px){
   .move_top{
     right: 15px;
@@ -703,6 +820,14 @@ footer{
       #nese{
         opacity: 0.8;
         background: black;
+          ul{
+            li{
+              margin-bottom: 10px;
+                a{
+                  font-size: 18px;
+                }
+            }
+          }
       }
     }
   }
@@ -747,14 +872,40 @@ footer{
         }
     }
   }
+  #single_post{
+    h4{
+      text-align: center;
+    }
+    img{
+      margin-bottom: 10px;
+    }
+    .a2a_kit{
+      margin-left: 80px;
+    }
+    p{
+      padding: 0 10px;
+    }
+
+  }
 }
 
 @media screen and (max-width: 992px){
   #works{
     .items{
       .item{
-        width: 100%;
-        padding: 0 10px;
+        width: 50%;
+        // padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+  #works{
+    .items{
+      .item{
+        width: 320px;
+        // padding: 0 10px;
       }
     }
   }
